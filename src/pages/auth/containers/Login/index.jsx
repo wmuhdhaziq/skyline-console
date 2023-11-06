@@ -197,14 +197,14 @@ export class Login extends Component {
         <Select placeholder={t('Select a region')} options={this.regions} />
       ),
     };
-    const domainItem = {
+    /* const domainItem = {
       name: 'domain',
-      required: true,
+      required: false,
       message: t('Please select your Domain!'),
       render: () => (
-        <Select placeholder={t('Select a domain')} options={this.domains} />
+         <Select placeholder={t('Select a domain')} options={this.domains} />
       ),
-    };
+    }; */
     const usernameItem = {
       name: 'username',
       required: true,
@@ -253,7 +253,7 @@ export class Login extends Component {
     const namePasswordItems = [
       errorItem,
       regionItem,
-      domainItem,
+      // domainItem,
       usernameItem,
       passwordItem,
       extraItem,
